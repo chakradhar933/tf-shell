@@ -16,7 +16,7 @@ resource "aws_instance" "web" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "project-tf-1"
+    Name = "project-tf-2"
   }
 }
 
