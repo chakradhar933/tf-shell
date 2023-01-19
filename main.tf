@@ -1,6 +1,7 @@
 provider "aws" {
   region = "us-east-2"
 }
+
 resource "aws_instance" "web" {
   ami           = var.ami
   instance_type = var.instance_type
@@ -9,11 +10,13 @@ resource "aws_instance" "web" {
     Name = "project-tf-1"
   }
 }
+
 resource "aws_instance" "web" {
   ami           = var.ami
   instance_type = var.instance_type
 
   tags = {
-    Name = "project-tf-2"
+    Name = "project-tf-1"
   }
 }
+
